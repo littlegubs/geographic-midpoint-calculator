@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.addresses {
+  height: calc(100vh - 110px - 0.5rem);
+  overflow-y: auto;
+  @include media-breakpoint-down(md) {
+    height: calc(100vh - 170px - 0.5rem);
+  }
+}
